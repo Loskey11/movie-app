@@ -1,0 +1,33 @@
+@import "../../common/colors.scss";
+
+// .movie-wrapper{
+//     margin-top: 100px;
+// }
+p {
+    color: white;
+    text-align: center;
+    // margin: 50px;
+}
+
+.movie-list {
+    margin: 40px;
+    h2 {
+        color: $font-secondary;
+        margin-bottom: 10px;
+        font-weight: 400;
+        
+
+    }
+
+    p{
+        margin: 5px;
+        font: 5px;
+    }
+}
+
+// .movie-container{
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
+//     grid-gap: 15px;
+//     margin-bottom: 50px;
+// }

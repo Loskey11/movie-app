@@ -1,0 +1,92 @@
+@import "../../common/colors.scss";
+
+.movie-section {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px 15px;
+  color: $font-primary;
+  font-weight: 400;
+}
+
+.movie-rating {
+  padding-left: 3px;
+  margin-top: 20px;
+  color: $font-secondary;
+  display: flex;
+  span {
+    margin-right: 20px;
+  }
+}
+
+.movie-title {
+  font-size: 40px;
+  color: $font-primary;
+}
+
+.movie-plot {
+  margin-top: 20px;
+  line-height: 1.8rem;
+}
+
+.movie-info > div span:first-child {
+  padding: 10px 0px;
+  color: $font-primary;
+  font-weight: 600;
+  width: 100px;
+  display: inline-block;
+}
+
+.movie-info > div span {
+  color: $font-secondary;
+}
+
+.section-right {
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 667px) {
+  .movie-section {
+    display: block;
+    justify-content: space-evenly;
+    padding: 30px 20px;
+    color: $font-primary;
+    font-weight: 300;
+  }
+
+  .movie-title {
+    font-size: 22px;
+    color: $font-primary;
+  }
+
+  .movie-plot {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+    // text-align: left;
+  }
+
+  .section-right {
+    margin-top: 20px;
+  }
+  .movie-rating {
+    margin-top: 20px;
+    color: $font-secondary;
+    font-size: 15px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    span {
+      margin-right: 15px;
+    }
+  }
+
+  .movie-info > div span:first-child {
+    padding: 10px 0px;
+    color: $font-primary;
+    font-weight: 500;
+    width: 100px;
+    display: block;
+    margin-top: 10px;
+  }
+}

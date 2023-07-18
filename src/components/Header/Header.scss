@@ -1,0 +1,111 @@
+@import "../../common/colors.scss";
+
+.header {
+  background-color: $secondary-color;
+  height: 72px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+//   z-index: 999;
+// margin-bottom: 100px;
+ 
+}
+
+.logo {
+  color: $font-primary;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.user-image,
+.user-image img {
+  width: 38px;
+  height: 38px;
+}
+
+.search-bar {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+
+  form {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+
+    button {
+      padding: 0px 8px;
+      font-size: 20px;
+      cursor: pointer;
+      height: 38px;
+    }
+    input {
+      font-size: 18px;
+      width: 100%;
+      padding: 5px 5px 5px 10px;
+      height: 38px;
+      outline: none;
+    }
+  }
+}
+
+.watchlist {
+  // background-color: $primary-color;
+  display: flex;
+ color: white;
+  gap: 6px;
+  font-weight: 500;
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  padding: 7px;
+  border-radius: 5px;
+  border: 2px solid rgb(20, 73, 117);
+  transition-duration: 0.5s;
+    &:hover {
+      background-color: rgb(80, 98, 145);
+    }
+
+  
+  
+}
+
+.watchlist-length {
+  vertical-align: super;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 667px) {
+
+  .header {
+    background-color: $secondary-color;
+    height: 220px;
+    padding: 10px 50px;
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+ .search-bar{
+  width: 100%;
+
+
+  input {
+    font-size: 10px;
+  }
+  form {
+    width:100%;
+  }
+ }
+
+ .watchlist{
+  font-size: 19px;
+  font-weight: 450;
+ }
+}
